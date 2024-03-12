@@ -1,0 +1,119 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'poppins';
+    font-size: 18px;
+}
+.bg-image{
+    background-image: url(" ./images/home-2.jpg" ); 
+    height: 60vh;
+    background-size: 100% 100%;
+}
+ 
+
+ 
+   /* -----------------------------------------------ntx------------- */
+  .card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+  }
+  .card{
+     width: 250px;
+     margin: 20px;
+  }
+  /* -----------------text-content---------------- */
+  
+footer{
+    background-color: #24262b;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    padding: 60px 10%;
+}
+
+ul{
+    list-style: none;
+}
+.footer-col{
+    width: 25%;
+    
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 350;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: relative;
+    left: 0;
+    bottom: -6px;
+    background-color: white;
+    height: 2px;
+    width: 40px;
+}
+
+ ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+ ul li a{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: block;
+}
+ ul li a:hover{
+    color: #ffffff;
+    padding-left: 2px;
+}
+
+.links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,255,255,0.2);
+        margin: 0 8px 8px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: white;
+        transition: all 0.5s;      
+
+}
+.links a:hover{
+    color: #24262b;
+    background-color: white;
+
+}
+/* responsive */
+
+@media(max-width:730px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+        text-align: center;
+    }   
+
+.footer-col h4::before{
+    all:unset;
+}
+}
+
+@media(max-width:550px){
+    .footer-col{
+        width: 100%;
+        
+    }   
+}
+/* ----------------------agent--------------------------------------- */
